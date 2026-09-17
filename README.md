@@ -33,12 +33,12 @@ answers four key business questions:
 
   Area                  Technologies
   --------------------- ---------------------------------------------
-  🗄️ Data Analysis      MySQL, SQL
-  🐍 Data Science       Python, Pandas, NumPy
-  📈 Visualization      Matplotlib, Seaborn, Power BI
-  🤖 Machine Learning   Logistic Regression, Random Forest, XGBoost
-  🧠 Explainable AI     SHAP
-  🔧 Version Control    Git, GitHub
+  🗄️ Data Analysis    :  MySQL, SQL
+  🐍 Data Science     :  Python, Pandas, NumPy
+  📈 Visualization     : Matplotlib, Seaborn, Power BI
+  🤖 Machine Learning  : Logistic Regression, Random Forest, XGBoost
+  🧠 Explainable AI    : SHAP
+  🔧 Version Control   : Git, GitHub
 
 ------------------------------------------------------------------------
 

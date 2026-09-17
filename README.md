@@ -43,14 +43,13 @@ This project addresses four key business questions:
 
 ### 🗄️ Data Analysis & Database
 
-- **MySQL**
 - **SQL**
 - Data aggregation
 - Filtering and segmentation
 - Business KPI analysis
 - Customer-level analysis
 
-### 🐍 Python & Data Science
+### 🐍 Data Science
 
 - **Python**
 - **Pandas**
@@ -66,8 +65,6 @@ This project addresses four key business questions:
 - **XGBoost**
 - Classification
 - Churn prediction
-- Customer risk scoring
-- Model evaluation
 
 ### 🧠 Explainable AI
 
@@ -79,8 +76,6 @@ This project addresses four key business questions:
 ### 📈 Data Visualization
 
 - **Power BI**
-- **Matplotlib**
-- **Seaborn**
 - Interactive dashboards
 - KPI visualization
 - Customer segmentation
@@ -89,7 +84,6 @@ This project addresses four key business questions:
 
 - **Git**
 - **GitHub**
-- Jupyter Notebook
 
 ---
 

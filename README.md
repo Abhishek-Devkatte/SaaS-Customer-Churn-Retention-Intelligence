@@ -3,7 +3,7 @@
 > **An end-to-end data analytics and machine learning project that identifies customers at risk of churn, explains churn drivers, estimates revenue exposure, and recommends retention actions.**
 
 **Author:** Abhishek Devkatte
-**Degree:** B.Tech — Computer Science & Engineering
+ B.Tech — Computer Science & Engineering
 
 
 ---
@@ -486,14 +486,3 @@ Rather than looking only at historical churn, the project combines analytics, ma
 
 **B.Tech — Computer Science & Engineering**
 
-Interested in:
-
-* 📊 Data Analytics
-* 🤖 Artificial Intelligence
-* 🧠 Machine Learning
-* 📈 Business Intelligence
-* 🔍 Intelligent Systems
-
----
-
-⭐ **If you find this project useful, consider giving the repository a star!**

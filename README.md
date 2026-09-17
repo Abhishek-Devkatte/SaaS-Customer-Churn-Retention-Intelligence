@@ -2,9 +2,8 @@
 
 > **An end-to-end data analytics and machine learning project that identifies customers at risk of churn, explains churn drivers, estimates revenue exposure, and recommends retention actions.**
 
-**Author:** Abhishek Devkatte
- B.Tech — Computer Science & Engineering
-
+**Author:** Abhishek Devkatte  
+**B.Tech — Computer Science & Engineering**
 
 ---
 
@@ -14,14 +13,14 @@
 
 The project transforms raw customer data into actionable retention intelligence by combining:
 
-* 🗄️ SQL-based business analysis
-* 🐍 Python data analysis and feature engineering
-* 🤖 Machine learning-based churn prediction
-* 🧠 SHAP-based model explainability
-* 📊 Power BI business intelligence dashboards
-* 🎯 Customer risk segmentation and retention recommendations
+- 🗄️ SQL-based business analysis
+- 🐍 Python data analysis and feature engineering
+- 🤖 Machine learning-based churn prediction
+- 🧠 SHAP-based model explainability
+- 📊 Power BI business intelligence dashboards
+- 🎯 Customer risk segmentation and retention recommendations
 
-The primary objective is to help a SaaS business understand **which customers are likely to churn, why they are at risk, how much recurring revenue is exposed, and what action can be considered to improve retention.**
+The primary objective is to help a SaaS business understand **which customers are likely to churn, why they are at risk, how much recurring revenue is associated with churned customers, and what retention action can be considered.**
 
 ---
 
@@ -31,12 +30,12 @@ Customer churn is a major challenge for subscription-based SaaS businesses becau
 
 This project addresses four key business questions:
 
-| Business Question                     | Analysis                                         |
-| ------------------------------------- | ------------------------------------------------ |
-| 👥 **Who is likely to churn?**        | Customer-level churn prediction and risk scoring |
-| 🔍 **Why are customers churning?**    | Churn driver and SHAP analysis                   |
-| 💰 **How much revenue is exposed?**   | MRR analysis of churned and high-risk customers  |
-| 🎯 **What action can be considered?** | Data-driven retention recommendations            |
+| Business Question | Analysis |
+|---|---|
+| 👥 **Who is likely to churn?** | Customer-level churn prediction and risk scoring |
+| 🔍 **Why are customers churning?** | Churn driver and SHAP analysis |
+| 💰 **How much revenue is associated with churn?** | MRR analysis of churned customers |
+| 🎯 **What action can be considered?** | Data-driven retention recommendations |
 
 ---
 
@@ -44,53 +43,53 @@ This project addresses four key business questions:
 
 ### 🗄️ Data Analysis & Database
 
-* **MySQL**
-* **SQL**
-* Data aggregation
-* Filtering and segmentation
-* Business KPI analysis
-* Customer-level analysis
+- **MySQL**
+- **SQL**
+- Data aggregation
+- Filtering and segmentation
+- Business KPI analysis
+- Customer-level analysis
 
 ### 🐍 Python & Data Science
 
-* **Python**
-* **Pandas**
-* **NumPy**
-* Exploratory Data Analysis (EDA)
-* Data cleaning
-* Feature engineering
+- **Python**
+- **Pandas**
+- **NumPy**
+- Exploratory Data Analysis (EDA)
+- Data cleaning
+- Feature engineering
 
 ### 🤖 Machine Learning
 
-* **Logistic Regression**
-* **Random Forest**
-* **XGBoost**
-* Classification
-* Churn prediction
-* Customer risk scoring
-* Model evaluation
+- **Logistic Regression**
+- **Random Forest**
+- **XGBoost**
+- Classification
+- Churn prediction
+- Customer risk scoring
+- Model evaluation
 
 ### 🧠 Explainable AI
 
-* **SHAP**
-* Feature importance
-* Prediction explanation
-* Churn driver analysis
+- **SHAP**
+- Feature importance
+- Prediction explanation
+- Churn driver analysis
 
 ### 📈 Data Visualization
 
-* **Power BI**
-* **Matplotlib**
-* **Seaborn**
-* Interactive dashboards
-* KPI visualization
-* Customer segmentation
+- **Power BI**
+- **Matplotlib**
+- **Seaborn**
+- Interactive dashboards
+- KPI visualization
+- Customer segmentation
 
 ### 🔧 Development & Version Control
 
-* **Git**
-* **GitHub**
-* Jupyter Notebook / Python scripts
+- **Git**
+- **GitHub**
+- Jupyter Notebook
 
 ---
 
@@ -102,36 +101,43 @@ The project uses a **10,000-customer synthetic B2B SaaS dataset** representing c
 
 #### 👤 Customer Information
 
-* Customer profile
-* Country
-* Industry
-* Company size
+- Customer profile
+- Country
+- Industry
+- Company size
+- Signup date
 
 #### 💳 Subscription Information
 
-* Subscription plan
-* Contract type
-* Monthly recurring revenue (MRR)
-* Subscription tenure
+- Subscription plan
+- Contract type
+- Monthly recurring revenue (MRR)
+- Discount percentage
+- Contract dates
 
 #### 📱 Product Engagement
 
-* Product usage
-* Feature adoption
-* Login/activity indicators
-* Engagement metrics
+- Product usage
+- Feature adoption
+- Login/activity indicators
+- Usage change
+- Onboarding completion
+- Number of integrations
 
 #### 🎧 Customer Support
 
-* Support interactions
-* Support-related indicators
-* Customer service activity
+- Support tickets
+- Unresolved tickets
+- Resolution time
+- Satisfaction score
+- NPS score
 
 #### 🚪 Churn Information
 
-* Churn status
-* Churn reasons
-* Customer retention status
+- Churn status
+- Churn date
+- Churn reasons
+- Customer retention status
 
 ---
 
@@ -141,32 +147,37 @@ The analysis of **10,000 customers** produced several important business insight
 
 ### 👥 Customer Base
 
-* **10,000 customers** analyzed
-* **24.85% overall churn rate**
+- **10,000 customers** analyzed
+- **24.85% overall churn rate**
+- **2,485 customers churned**
+- **7,515 customers remained active**
 
 ### 📅 Contract Type
 
 | Contract Type | Churn Rate |
-| ------------- | ---------: |
-| Monthly       | **31.16%** |
-| Annual        | **15.96%** |
+|---|---:|
+| Monthly | **31.16%** |
+| Quarterly | **22.72%** |
+| Annual | **15.96%** |
 
-Monthly-contract customers showed a substantially higher observed churn rate than annual-contract customers in this dataset.
+Monthly-contract customers showed a substantially higher **observed churn rate** than annual-contract customers in this dataset.
 
-### 💰 Revenue Exposure
+This is an observed association and does not by itself establish causation.
 
-Churned customers represented approximately:
+### 💰 Revenue Associated With Churned Customers
+
+Customers who churned represented approximately:
 
 > **₹15.08 lakh in Monthly Recurring Revenue (MRR)**
 
-This highlights the potential recurring-revenue exposure associated with customer churn.
+This represents the MRR associated with customers who had churned in the analyzed dataset.
 
 ### 📉 Feature Adoption
 
 | Customer Status | Average Feature Adoption |
-| --------------- | -----------------------: |
-| Active          |               **64.05%** |
-| Churned         |               **53.65%** |
+|---|---:|
+| Active | **64.05%** |
+| Churned | **53.65%** |
 
 The dataset shows lower average feature adoption among churned customers.
 
@@ -174,14 +185,14 @@ The dataset shows lower average feature adoption among churned customers.
 
 Churn patterns were further analyzed across:
 
-* Contract type
-* Subscription plan
-* Industry
-* Company size
-* Country
-* Product usage
-* Feature adoption
-* Customer support indicators
+- Contract type
+- Subscription plan
+- Industry
+- Company size
+- Country
+- Product usage
+- Feature adoption
+- Customer support indicators
 
 ---
 
@@ -191,17 +202,17 @@ Three classification algorithms were evaluated for predicting customer churn.
 
 ## 📈 Model Evaluation
 
-| Model               |   Accuracy |     Recall |   ROC-AUC |
-| ------------------- | ---------: | ---------: | --------: |
+| Model | Accuracy | Recall | ROC-AUC |
+|---|---:|---:|---:|
 | Logistic Regression | **70.25%** | **71.63%** | **0.779** |
-| Random Forest       | **73.10%** | **61.97%** | **0.764** |
-| XGBoost             | **76.55%** | **27.16%** | **0.759** |
+| Random Forest | **73.10%** | **61.97%** | **0.764** |
+| XGBoost | **76.55%** | **27.16%** | **0.759** |
 
 ### 🎯 Model Selection
 
 For the retention-focused risk analysis, **Logistic Regression** was selected because the project prioritizes identifying potential churners.
 
-For a churn-retention use case, **recall is particularly important** because failing to identify a customer who is actually going to churn can result in a missed retention opportunity.
+For a churn-retention use case, recall is particularly important because failing to identify a customer who is actually going to churn can result in a missed retention opportunity.
 
 Therefore, model selection was not based on accuracy alone.
 
@@ -215,10 +226,10 @@ Machine learning predictions are more useful to business teams when the reasons 
 
 The analysis helps answer questions such as:
 
-* Which customer characteristics contribute to higher churn risk?
-* Which factors reduce predicted churn risk?
-* Why was a particular customer classified as high risk?
-* Which behavioral patterns are associated with churn?
+- Which customer characteristics contribute to higher churn risk?
+- Which factors reduce predicted churn risk?
+- Why was a particular customer classified as high risk?
+- Which behavioral patterns are associated with churn?
 
 This connects:
 
@@ -228,17 +239,17 @@ This connects:
 
 # ⚠️ Customer Risk Scoring
 
-Each customer receives a churn-risk classification.
+Each customer receives a churn-risk classification based on the predicted probability of churn.
 
 ### Risk Levels
 
-| Risk Level         | Description                             |
-| ------------------ | --------------------------------------- |
-| 🟢 **Low Risk**    | Lower predicted probability of churn    |
+| Risk Level | Description |
+|---|---|
+| 🟢 **Low Risk** | Lower predicted probability of churn |
 | 🟡 **Medium Risk** | Moderate predicted probability of churn |
-| 🔴 **High Risk**   | Higher predicted probability of churn   |
+| 🔴 **High Risk** | Higher predicted probability of churn |
 
-Customer-level risk predictions can be used by customer success teams to prioritize intervention.
+Customer-level risk predictions can be used by customer success teams to prioritize potential interventions.
 
 ---
 
@@ -246,13 +257,13 @@ Customer-level risk predictions can be used by customer success teams to priorit
 
 The project converts customer risk information into potential retention actions.
 
-| Retention Action                 | Example Use Case                                       |
-| -------------------------------- | ------------------------------------------------------ |
-| 🧩 **Feature Adoption Campaign** | Low product/feature adoption                           |
-| 🔄 **Re-engagement Campaign**    | Reduced customer engagement                            |
-| 🎧 **Priority Support**          | Customers showing support-related risk                 |
-| 🚀 **Onboarding Intervention**   | Customers requiring additional onboarding              |
-| 🤝 **Customer Success Review**   | Higher-risk customers requiring personalized attention |
+| Retention Action | Example Use Case |
+|---|---|
+| 🧩 **Feature Adoption Campaign** | Low product or feature adoption |
+| 🔄 **Re-engagement Campaign** | Reduced customer engagement |
+| 🎧 **Priority Support** | Customers showing support-related risk |
+| 🚀 **Onboarding Intervention** | Customers requiring additional onboarding |
+| 🤝 **Customer Success Review** | Higher-risk customers requiring personalized attention |
 
 These recommendations are intended as **data-driven intervention suggestions**, rather than guaranteed outcomes.
 
@@ -268,17 +279,15 @@ Provides a high-level view of customer churn.
 
 ### KPIs
 
-* Total Customers
-* Churn Rate
-* Churned Customers
-* Revenue Exposure
+- 👥 Total Customers
+- 📊 Churn Rate
 
 ### Visualizations
 
-* Churn rate by contract type
-* Churn reasons
-* Customer status
-* Overall churn overview
+- Churn Rate by Contract Type
+- Churn Reasons
+
+This page provides a quick overview of the overall customer churn situation.
 
 ---
 
@@ -288,14 +297,12 @@ Focuses on identifying patterns associated with customer churn.
 
 ### Analysis Includes
 
-* Churn by industry
-* Churn by subscription plan
-* Churn by company size
-* Churn by country
-* Contract-level churn comparison
-* Customer behavior indicators
+- Churn by Industry
+- Churned Customers by Plan
+- Churned Customers by Company Size
+- Churn by Country
 
-This page helps business users investigate **where churn is concentrated**.
+This page helps business users investigate **where churn is concentrated** across different customer segments.
 
 ---
 
@@ -305,12 +312,19 @@ Focuses on actionable customer-level insights.
 
 ### Includes
 
-* Risk distribution
-* Customer-level risk predictions
-* High-risk customer identification
-* Recommended retention actions
-* Risk level by recommended action
-* Customer prioritization
+- Customer Risk Distribution
+- Customer-level Risk Table
+- Recommended Retention Actions
+- Risk Level by Recommended Action
+
+The risk table contains:
+
+- Customer ID
+- Churn Probability
+- Risk Level
+- Monthly Recurring Revenue
+- Predicted MRR at Risk
+- Recommended Retention Action
 
 This page connects analytical predictions with potential business interventions.
 
@@ -318,77 +332,64 @@ This page connects analytical predictions with potential business interventions.
 
 # 🔄 End-to-End Project Workflow
 
-```text
-                    RAW CUSTOMER DATA
-                           │
-                           ▼
-                    DATA PREPARATION
-                           │
-                           ▼
-                    SQL ANALYSIS
-                           │
-                           ▼
-                PYTHON EDA & CLEANING
-                           │
-                           ▼
-                 FEATURE ENGINEERING
-                           │
-                           ▼
-               MACHINE LEARNING MODELS
-                           │
-             ┌─────────────┼─────────────┐
-             ▼             ▼             ▼
-        Logistic RF       XGBoost
-             │             │             │
-             └─────────────┼─────────────┘
-                           ▼
-                    MODEL EVALUATION
-                           │
-                           ▼
-                   SHAP EXPLAINABILITY
-                           │
-                           ▼
-                  CUSTOMER RISK SCORING
-                           │
-                           ▼
-               RETENTION RECOMMENDATIONS
-                           │
-                           ▼
-                    POWER BI DASHBOARD
-                           │
-                           ▼
-                 BUSINESS INSIGHTS
-```
+RAW CUSTOMER DATA  
+↓  
+DATA PREPARATION  
+↓  
+SQL ANALYSIS  
+↓  
+PYTHON EDA & CLEANING  
+↓  
+FEATURE ENGINEERING  
+↓  
+MACHINE LEARNING MODELS  
+↓  
+MODEL EVALUATION  
+↓  
+SHAP EXPLAINABILITY  
+↓  
+CUSTOMER RISK SCORING  
+↓  
+RETENTION RECOMMENDATIONS  
+↓  
+POWER BI DASHBOARD  
+↓  
+BUSINESS INSIGHTS
 
 ---
 
 # 📁 Project Structure
 
-```text
-SaaS-Customer-Churn-Intelligence/
-│
-├── 📂 data/
-│   ├── churn_analysis.csv
-│   ├── customer_risk_predictions.csv
-│   └── customer_status.csv
-│
-├── 📂 sql/
-│   └── churn_analysis.sql
-│
-├── 📂 python/
-│   └── churn_analysis.ipynb
-│
-├── 📂 PowerBi/
-│   └── SaaS_churn_intelligence.pbix
-│
-├── 📂 screenshots/
-│   ├── executive_overview.png
-│   ├── churn_drivers.png
-│   └── customer_risk_retention.png
-│
-├── 📄 README.md
+SaaS-Customer-Churn-Retention-Intelligence/
+
+├── 📂 data/  
+│   ├── churn_analysis.csv  
+│   ├── customer_risk_predictions.csv  
+│   ├── customer_status.csv  
+│   ├── customers.csv  
+│   ├── saas_churn_master.csv  
+│   ├── subscriptions.csv  
+│   ├── support_data.csv  
+│   └── usage_metrics.csv  
+│  
+├── 📂 sql/  
+│   └── churn_analysis.sql  
+│  
+├── 📂 python/  
+│   └── churn_analysis_ml.ipynb  
+│  
+├── 📂 PowerBi/  
+│   └── SaaS_churn_intelligence.pbix  
+│  
+├── 📂 screenshots/  
+│   ├── Churn Drivers.png  
+│   ├── Customer Risk.png  
+│   └── Executive Overview.png  
+│  
+├── 📄 README.md  
 └── 📄 .gitignore
-```
+
+> **Note:** The local `venv/` folder is excluded from GitHub using `.gitignore`.
 
 ---
 
@@ -398,33 +399,29 @@ The project demonstrates how organizations can transform customer data into acti
 
 ### Traditional Analytics
 
-```text
-Customer Data
-      ↓
-Historical Reports
-      ↓
+Customer Data  
+↓  
+Historical Reports  
+↓  
 Churn Insights
-```
 
 ### This Project
 
-```text
-Customer Data
-      ↓
-SQL Analysis
-      ↓
-Customer Behavior Insights
-      ↓
-Churn Prediction
-      ↓
-Risk Scoring
-      ↓
-Explainable Predictions
-      ↓
-Retention Recommendations
-      ↓
+Customer Data  
+↓  
+SQL Analysis  
+↓  
+Customer Behavior Insights  
+↓  
+Churn Prediction  
+↓  
+Risk Scoring  
+↓  
+Explainable Predictions  
+↓  
+Retention Recommendations  
+↓  
 Business Dashboard
-```
 
 The approach enables business teams to move from simply **understanding historical churn** toward **identifying customers who may require attention**.
 
@@ -434,24 +431,24 @@ The approach enables business teams to move from simply **understanding historic
 
 This project demonstrates practical experience in:
 
-* SQL querying
-* MySQL
-* Data cleaning
-* Exploratory Data Analysis
-* Feature engineering
-* Statistical analysis
-* Classification algorithms
-* Model evaluation
-* Recall and ROC-AUC interpretation
-* Explainable AI
-* SHAP
-* Customer segmentation
-* Churn analysis
-* Revenue analysis
-* Business KPI development
-* Power BI dashboard development
-* Data storytelling
-* Git & GitHub
+- SQL querying
+- MySQL
+- Data cleaning
+- Exploratory Data Analysis
+- Feature engineering
+- Statistical analysis
+- Classification algorithms
+- Model evaluation
+- Recall and ROC-AUC interpretation
+- Explainable AI
+- SHAP
+- Customer segmentation
+- Churn analysis
+- Revenue analysis
+- Business KPI development
+- Power BI dashboard development
+- Data storytelling
+- Git & GitHub
 
 ---
 
@@ -459,14 +456,14 @@ This project demonstrates practical experience in:
 
 Potential improvements to the project include:
 
-* 🔄 Automated model retraining pipeline
-* 📡 Real-time customer risk monitoring
-* 📊 Automated Power BI data refresh
-* 💰 Customer Lifetime Value (CLV) prediction
-* 📈 Retention campaign effectiveness tracking
-* 🧪 A/B testing of retention strategies
-* ☁️ Cloud deployment
-* 🔔 Automated alerts for newly identified high-risk customers
+- 🔄 Automated model retraining pipeline
+- 📡 Real-time customer risk monitoring
+- 📊 Automated Power BI data refresh
+- 💰 Customer Lifetime Value (CLV) prediction
+- 📈 Retention campaign effectiveness tracking
+- 🧪 A/B testing of retention strategies
+- ☁️ Cloud deployment
+- 🔔 Automated alerts for newly identified high-risk customers
 
 ---
 
@@ -485,4 +482,3 @@ Rather than looking only at historical churn, the project combines analytics, ma
 ## Abhishek Devkatte
 
 **B.Tech — Computer Science & Engineering**
-

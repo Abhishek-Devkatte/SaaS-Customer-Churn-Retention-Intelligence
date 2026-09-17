@@ -4,7 +4,7 @@
 
 **Author:** Abhishek Devkatte
 **Degree:** B.Tech — Computer Science & Engineering
-**Domain:** Data Analytics • Machine Learning • Business Intelligence • Customer Retention
+
 
 ---
 
